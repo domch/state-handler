@@ -3,15 +3,16 @@ package ch.dom.statemachine;
 public class TransitionManager<T> {
     
     private Transition<T> transition;
+    private StateFinder<T> stateFinder;
+    private StateUpdater<T> stateUpdater;
 
     public TransitionManager(Transition<T> transition){
-        
         this.transition = transition;
     }
 
     public void start(T t){
-        StateFactory<T> stateFactory = new StateFactory<>();
-        State currentState = stateFactory.find(t);
+
+        var currentState = stateFinder.find(t);
 
         if(!currentState.equals(transition.getFromState())){
             throw new IllegalStateException("Transition not allowed");
@@ -19,7 +20,7 @@ public class TransitionManager<T> {
 
         transition.move(t);
 
-        stateFactory.update(t, transition.getToState());
+        stateUpdater.update(t, transition.getToState());
     }
 
 }

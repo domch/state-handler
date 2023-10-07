@@ -10,7 +10,7 @@ class Application{
 
         var document = Document.create(UUID.randomUUID()); // is coming from message layer
 
-        var transitionFactory = new TransitionFactory();
+        var transitionFactory = new TransitionFactory(); 
         var transitionManager = transitionFactory.get(TransitionType.DELETE);
         transitionManager.start(document);
     }
