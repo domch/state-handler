@@ -1,7 +1,8 @@
-package ch.dom.statemachine.framework;
+package ch.dom.statemachine.usecase.service;
 
 import ch.dom.statemachine.State;
 import ch.dom.statemachine.StateDataHandler;
+import ch.dom.statemachine.framework.DocumentRepository;
 import ch.dom.statemachine.usecase.Document;
 
 public class DefaultStateDataService implements StateDataHandler<Document>{

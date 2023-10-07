@@ -2,11 +2,12 @@ package ch.dom.statemachine.usecase.transition;
 
 import ch.dom.statemachine.State;
 import ch.dom.statemachine.Transition;
+import ch.dom.statemachine.usecase.Document;
 import ch.dom.statemachine.usecase.service.DocumentDataService;
 import ch.dom.statemachine.usecase.state.DocumentDeleted;
 import ch.dom.statemachine.usecase.state.DocumentRestored;
 
-public class RestoreDocumentTransition implements Transition{
+public class RestoreDocumentTransition implements Transition<Document>{
 
     private DocumentDataService documentDataService;
 
@@ -24,8 +25,8 @@ public class RestoreDocumentTransition implements Transition{
     }
 
     @Override
-    public void start() {
-        documentDataService.restore();
+    public void move(Document document) {
+        documentDataService.restore(document);
     }
     
 }

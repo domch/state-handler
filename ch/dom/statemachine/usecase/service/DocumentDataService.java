@@ -1,8 +1,8 @@
 package ch.dom.statemachine.usecase.service;
 
-import java.util.UUID;
+import ch.dom.statemachine.usecase.Document;
 
 public interface DocumentDataService {
-    void delete(UUID documentId);
-    void restore(UUID documentId);
+    void delete(Document document);
+    void restore(Document document);
 }
