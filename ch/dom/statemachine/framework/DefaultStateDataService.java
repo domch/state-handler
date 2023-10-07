@@ -4,11 +4,11 @@ import ch.dom.statemachine.State;
 import ch.dom.statemachine.StateDataHandler;
 import ch.dom.statemachine.usecase.Document;
 
-public class StateDataService implements StateDataHandler<Document>{
+public class DefaultStateDataService implements StateDataHandler<Document>{
 
     private DocumentRepository documentRepository;
 
-    public StateDataService(DocumentRepository documentRepository) {
+    public DefaultStateDataService(DocumentRepository documentRepository) {
         this.documentRepository = documentRepository;
     }
 

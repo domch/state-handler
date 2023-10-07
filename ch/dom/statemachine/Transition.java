@@ -1,6 +1,8 @@
-public interface Transition{
+
+package ch.dom.statemachine;
+
+public interface Transition<T>{
     State getFromState();
     State getToState();
-    boolean isPossible(State fromState, State toState);
-    void execute();
+    void start(T t);
 }
