@@ -2,7 +2,7 @@ package ch.dom.statemachine;
 
 import java.lang.reflect.InvocationTargetException;
 
-public class TransitionFactory<T> {
+public class TransitionManagerFactory<T> {
 
     public TransitionManager<T> get(Class<? extends Transition<T>> transitionClass) {
         try {
