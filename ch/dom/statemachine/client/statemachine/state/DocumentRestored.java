@@ -1,4 +1,4 @@
-package ch.dom.statemachine.client.state;
+package ch.dom.statemachine.client.statemachine.state;
 
 import ch.dom.statemachine.State;
 

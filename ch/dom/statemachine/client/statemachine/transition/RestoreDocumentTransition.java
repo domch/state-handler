@@ -1,11 +1,11 @@
-package ch.dom.statemachine.client.transition;
+package ch.dom.statemachine.client.statemachine.transition;
 
 import ch.dom.statemachine.State;
 import ch.dom.statemachine.Transition;
-import ch.dom.statemachine.client.Document;
+import ch.dom.statemachine.client.model.Document;
 import ch.dom.statemachine.client.service.DocumentDataService;
-import ch.dom.statemachine.client.state.DocumentDeleted;
-import ch.dom.statemachine.client.state.DocumentRestored;
+import ch.dom.statemachine.client.statemachine.state.DocumentDeleted;
+import ch.dom.statemachine.client.statemachine.state.DocumentRestored;
 
 public class RestoreDocumentTransition implements Transition<Document>{
 

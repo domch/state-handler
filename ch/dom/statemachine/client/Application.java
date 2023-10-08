@@ -3,7 +3,8 @@ package ch.dom.statemachine.client;
 import java.util.UUID;
 
 import ch.dom.statemachine.TransitionFactory;
-import ch.dom.statemachine.client.transition.TransitionType;
+import ch.dom.statemachine.client.model.Document;
+import ch.dom.statemachine.client.statemachine.transition.TransitionType;
 
 class Application{
     public static void main(String args[]) {

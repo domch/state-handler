@@ -1,4 +1,4 @@
-package ch.dom.statemachine.client;
+package ch.dom.statemachine.client.model;
 
 import java.util.UUID;
 

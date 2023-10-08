@@ -1,10 +1,10 @@
-package ch.dom.statemachine.client.service;
+package ch.dom.statemachine.client.statemachine;
 
 import ch.dom.statemachine.State;
 import ch.dom.statemachine.StateFinder;
 import ch.dom.statemachine.StateUpdater;
-import ch.dom.statemachine.client.Document;
 import ch.dom.statemachine.client.framework.DocumentRepository;
+import ch.dom.statemachine.client.model.Document;
 
 public class DefaultStateDataService implements StateFinder<Document>, StateUpdater<Document>{
     private DocumentRepository documentRepository;

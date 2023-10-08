@@ -1,6 +1,6 @@
 package ch.dom.statemachine.client.service;
 
-import ch.dom.statemachine.client.Document;
+import ch.dom.statemachine.client.model.Document;
 
 public interface DocumentDataService {
     void delete(Document document);

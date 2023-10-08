@@ -1,7 +1,7 @@
-package ch.dom.statemachine.client.transition;
+package ch.dom.statemachine.client.statemachine.transition;
 
 import ch.dom.statemachine.Transition;
-import ch.dom.statemachine.client.Document;
+import ch.dom.statemachine.client.model.Document;
 
 public enum TransitionType {
     DELETE(DeleteDocumentTransition.class),
