@@ -13,4 +13,9 @@ public class DocumentRestored implements State{
     public void onExit() {
         // fire event
     }
+
+    @Override
+    public void onError() {
+        // fire event
+    } 
 }

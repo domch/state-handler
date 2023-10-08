@@ -14,6 +14,7 @@ public class TransitionManager<T> {
         
         var currentState = stateFinder.find(t);
         if(!currentState.equals(transition.getFromState())){
+            currentState.onError();
             throw new IllegalStateException("Transition not allowed");
         }
 
