@@ -12,10 +12,5 @@ public class DocumentDeleted implements State{
     @Override
     public void onExit() {
         // fire event
-    }
-
-    @Override
-    public String getName() {
-        return StateType.DELETED.toString();
-    }   
+    }  
 }

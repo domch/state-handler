@@ -2,7 +2,7 @@ package ch.dom.statemachine.client.statemachine.state;
 
 import ch.dom.statemachine.State;
 
-public class DocumentRestored implements State{
+public class DocumentDelivered implements State{
 
     @Override
     public void onEnter() {
@@ -12,5 +12,5 @@ public class DocumentRestored implements State{
     @Override
     public void onExit() {
         // fire event
-    }
+    } 
 }

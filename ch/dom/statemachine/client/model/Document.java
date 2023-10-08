@@ -2,16 +2,17 @@ package ch.dom.statemachine.client.model;
 
 import java.util.UUID;
 
-import ch.dom.statemachine.State;
+import ch.dom.statemachine.client.statemachine.state.StateType;
 
 public class Document {
-    private State state;
+    private StateType state;
     private UUID id;
 
     // create a static factory method
-    public static Document create(UUID id) {
+    public static Document create(UUID id, StateType state) {
         Document document = new Document();
         document.id = id;
+        document.state = state;
         return document;
     }
 
@@ -19,11 +20,11 @@ public class Document {
         return id;
     }
 
-    public State getState() {
+    public StateType getState() {
         return state;
     }
 
-    public void setState(State state) {
+    public void setState(StateType state) {
         this.state = state;
     }
 }
