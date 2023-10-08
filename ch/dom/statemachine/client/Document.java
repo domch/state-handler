@@ -1,6 +1,8 @@
-package ch.dom.statemachine.usecase;
+package ch.dom.statemachine.client;
 
 import java.util.UUID;
+
+import ch.dom.statemachine.State;
 
 public class Document {
     private State state;
@@ -19,5 +21,9 @@ public class Document {
 
     public State getState() {
         return state;
+    }
+
+    public void setState(State state) {
+        this.state = state;
     }
 }

@@ -1,6 +1,6 @@
-package ch.dom.statemachine.usecase.service;
+package ch.dom.statemachine.client.service;
 
-import ch.dom.statemachine.usecase.Document;
+import ch.dom.statemachine.client.Document;
 
 public interface DocumentDataService {
     void delete(Document document);

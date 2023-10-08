@@ -11,14 +11,15 @@ public class TransitionManager<T> {
     }
 
     public void start(T t){
-
+        
         var currentState = stateFinder.find(t);
-
         if(!currentState.equals(transition.getFromState())){
             throw new IllegalStateException("Transition not allowed");
         }
 
+        currentState.onEnter();
         transition.move(t);
+        currentState.onExit();
 
         stateUpdater.update(t, transition.getToState());
     }

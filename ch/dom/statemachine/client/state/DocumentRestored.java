@@ -1,4 +1,4 @@
-package ch.dom.statemachine.usecase.state;
+package ch.dom.statemachine.client.state;
 
 import ch.dom.statemachine.State;
 
@@ -6,10 +6,12 @@ public class DocumentRestored implements State{
 
     @Override
     public void onEnter() {
+        // fire event
     }
 
     @Override
     public void onExit() {
+        // fire event
     }
 
     @Override

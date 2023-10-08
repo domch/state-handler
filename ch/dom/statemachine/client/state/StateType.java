@@ -1,4 +1,4 @@
-package ch.dom.statemachine.usecase.state;
+package ch.dom.statemachine.client.state;
 
 
 public enum StateType {
